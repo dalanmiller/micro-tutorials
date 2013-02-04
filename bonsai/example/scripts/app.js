@@ -7,7 +7,7 @@ define(['jquery', 'bonsai'], function($, bonsai) {
             code:function(){
 
                 //Bitmap loading image
-                var koffing_body = new Bitmap('../images/koffing.gif', function(err) {
+                var koffing_body = new Bitmap('https://raw.github.com/dalanmiller/micro-tutorials/master/bonsai/example/images/koffing.gif', function(err) {
                       if (err) return;
                       return new Rect(0, 0, 600, 600).attr({
                         fillImage: this.attr({
